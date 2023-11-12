@@ -1,53 +1,303 @@
 ---
-import Spacer from '../components/Spacer'; // import the Spacer component
+import { Link } from 'astro'
+
+export default function Index() {
+  return (
+    <div class="space-y-24">
+      {}
+      <header class="sticky top-0 bg-white">
+        <nav class="flex justify-between py-6 max-w-6xl mx-auto items-center">
+          <Link to="/">
+            <img src="/logo.svg" alt="rhythm nation logo" width="142.42" height="40" loading="lazy" decoding="async" />
+          </Link>
+          <div class="space-x-6">
+            <Link to="/" class="font-normal font-semibold">Home</Link>
+            <Link to="/blog" class="font-normal">Blog</Link>
+            <Link to="/docs/guides/first-guide" class="font-normal">Docs</Link>
+            <Link to="/contact-us" class="font-normal">Contact</Link>
+          </div>
+        </nav>
+      </header>
+
+      
+      <main>
+        <section class="hero-section">
+          <div class="px-8">
+            <div class="max-w-6xl mx-auto">
+              <div class="flex flex-col md:flex-row md:justify-between md:space-x-24">
+                <div class="space-y-8 md:space-y-16 relative max-w-2xl mt-10">
+                  <div>
+                    <h1 class="md:text-[80px] text-5xl font-bold leading-tight">INSPIRING BRAND EXPERIENCES</h1>
+                    <p class="md:text-xl">Our team of experts specializes in web design &amp;Development, branding, content creation, UI/UX Design, Community manage, and more.</p>
+                  </div>
+                  <button class="px-6 py-3 bg-[#FAE86E] rounded-full flex items-center space-x-4">
+                    <span class="font-medium">Our Projects</span>
+                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1.07692 10L8.46154 2.61538V9.23077H10V0H0.769231V1.53846H7.38462L0 8.92308L1.07692 10Z" fill="black"></path>
+                    </svg>
+                  </button>
+                  <div class="space-y-4">
+                    <div class="flex -space-x-2">
+                      <img class="inline-block md:h-14 md:w-14 w-11 h-11 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&#38;auto=format&#38;fit=facearea&#38;facepad=2&#38;w=256&#38;h=256&#38;q=80" alt="">
+                      <img class="inline-block md:h-14 md:w-14 w-11 h-11 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&#38;ixid=eyJhcHBfaWQiOjEyMDd9&#38;auto=format&#38;fit=facearea&#38;facepad=2&#38;w=256&#38;h=256&#38;q=80" alt="">
+                      <img class="inline-block md:h-14 md:w-14 w-11 h-11 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&#38;ixid=eyJhcHBfaWQiOjEyMDd9&#38;auto=format&#38;fit=facearea&#38;facepad=2&#38;w=256&#38;h=256&#38;q=80" alt="">
+                    </div>
+                    <p class="md:text-xl max-w-sm">A forward-thinking digital design studio delivering subtle experiences.</p>
+                  </div>
+                  <div class="hidden md:block bg-[url('/hero-grid.svg')] bg-contain bg-repeat-x absolute h-[826px] w-[826px] -top-[132px] -z-10 -left-[154px]"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  )
+}
+<!-- Hero section (continued) -->
+<section>
+  <div class="px-8">
+    <div class="max-w-6xl mx-auto">
+      <div class="flex flex-col md:flex-row md:space-x-24 items-center">
+        <img src="/_astro/hero.0ba4f3a9_2srxXT.png" alt="hero image" class="object-cover bg-gray-600 h-[460px] w-full" width="570" height="600" loading="lazy" decoding="async">
+        <div class="space-y-4 mt-14">
+          <div class="flex flex-wrap items-center md:justify-start justify-center">
+            <span class="mt-4 mr-4 px-4 py-1.5 rounded-full flex items-center border border-slate-900 w-fit">Web Design</span>
+            <span class="mt-4 mr-4 px-4 py-1.5 rounded-full flex items-center border border-slate-900 w-fit">UI/UX design</span>
+            <span class="mt-4 mr-4 px-4 py-1.5 rounded-full flex items-center border border-slate-900 w-fit">Web3</span>
+            <span class="mt-4 mr-4 px-4 py-1.5 rounded-full flex items-center border border-slate-900 w-fit">Content writing</span>
+            <span class="mt-4 mr-4 px-4 py-1.5 rounded-full flex items-center border border-slate-900 w-fit">Branding</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- About Us section -->
+<section>
+  <div class="px-8">
+    <div class="max-w-6xl mx-auto">
+      <div class="flex flex-col md:flex-row md:space-x-28 items-center">
+        <img src="/_astro/about.e0278a78_MvUCy.jpg" alt="hero image" class="object-cover bg-gray-600 h-[500px] w-[500px] flex-shrink-0" width="500" height="540" loading="lazy" decoding="async">
+        <div class="space-y-6 mt-10 md:mt-0">
+          <h2 class="text-3xl font-bold">ABOUT US</h2>
+          <p class="leading-relaxed">At Hooman Digital, we're more than just a team of digital experts. We're a group of individuals who are passionate about using our skills and expertise to help others succeed. Our team is made up of designers, developers, writers, marketers, and community builders, each with a unique perspective and set of skills. We're committed to creating digital solutions that are authentic, innovative, immersive, and intuitive. Whether we're designing a new website, developing a brand identity.</p>
+          <div class="pt-6">
+            <button class="px-6 py-3 bg-[#FAE86E] rounded-full flex items-center space-x-4">
+              <span class="font-medium">View More</span>
+              <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.07692 10L8.46154 2.61538V9.23077H10V0H0.769231V1.53846H7.38462L0 8.92308L1.07692 10Z" fill="black"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="bg-black py-24 text-white">
+  <div class="px-8">
+    <div class="max-w-6xl mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-8 gap-x-28 gap-y-10">
+        <div class="col-span-3">
+          <h2 class="text-3xl md:text-5xl font-bold leading-snug">WE PROVIDE SERVICES</h2>
+        </div>
+        <div class="col-span-5 overflow-auto flex h-full items-center">
+          <p class="md:text-lg">At Hooman Digital, we offer a range of services to help you achieve your digital goals. Our services include At Hooman Digital, we offer a range of services to help you achieve your digital goals. Our services include.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="bg-black py-24 text-white">
+  <div class="px-8">
+    <div class="max-w-6xl mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-8 gap-x-28 gap-y-10">
+        <div class="col-span-3">
+          <h2 class="text-3xl md:text-5xl font-bold leading-snug">WE PROVIDE SERVICES</h2>
+        </div>
+        <img src="/_astro/services.d5361717_Zc3v92.jpg" alt="hero image" class="object-cover bg-gray-600 h-[300px] md:h-[577px] w-full md:w-[500px] md:flex-shrink-0 col-span-5 md:col-span-3" width="500" height="577" loading="lazy" decoding="async">
+        <div class="w-full h-full col-span-5 divide-white flex flex-col divide-y items-center justify-center">
+          <div class="flex justify-between items-center py-7 w-full border-t">
+            <div class="flex md:text-3xl text-2xl space-x-5">
+              <p class="text-[#FAE86E]">01</p>
+              <h4>UI/UX DESIGN</h4>
+            </div>
+            <svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M21.8516 1.80005V18.05C21.8516 18.2987 21.7528 18.5371 21.577 18.713C21.4012 18.8888 21.1628 18.9875 20.9141 18.9875C20.6655 18.9875 20.427 18.8888 20.2512 18.713C20.0754 18.5371 19.9766 18.2987 19.9766 18.05V4.06255L1.57661 22.4625C1.3989 22.6281 1.16384 22.7183 0.920962 22.714C0.678086 22.7097 0.446354 22.6113 0.274587 22.4396C0.102821 22.2678 0.00443133 22.0361 0.000146059 21.7932C-0.00413921 21.5503 0.0860145 21.3153 0.251614 21.1375L18.6516 2.73755H4.66411C4.41547 2.73755 4.17702 2.63878 4.0012 2.46296C3.82539 2.28715 3.72661 2.04869 3.72661 1.80005C3.72661 1.55141 3.82539 1.31295 4.0012 1.13714C4.17702 0.961321 4.41547 0.862549 4.66411 0.862549H20.9141C21.1628 0.862549 21.4012 0.961321 21.577 1.13714C21.7528 1.31295 21.8516 1.55141 21.8516 1.80005Z" fill="#FAE86E"></path>
+            </svg>
+          </div>
+          <!-- Repeat the following block for each service -->
+          <div class="flex justify-between items-center py-7 w-full">
+            <div class="flex md:text-3xl text-2xl space-x-5">
+              <p class="text-[#FAE86E]">02</p>
+              <h4>WEBSITE DEVELOPMENT</h4>
+            </div>
+            <svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M21.8516 1.80005V18.05C21.8516 18.2987 21.7528 18.5371 21.577 18.713C21.4012 18.8888 21.1628 18.9875 20.9141 18.9875C20.6655 18.9875 20.427 18.8888 20.2512 18.713C20.0754 18.5371 19.9766 18.2987 19.9766 18.05V4.06255L1.57661 22.4625C1.3989 22.6281 1.16384 22.7183 0.920962 22.714C0.678086 22.7097 0.446354 22.6113 0.274587 22.4396C0.102821 22.2678 0.00443133 22.0361 0.000146059 21.7932C-0.00413921 21.5503 0.0860145 21.3153 0.251614 21.1375L18.6516 2.73755H4.66411C4.41547 2.73755 4.17702 2.63878 4.0012 2.46296C3.82539 2.28715 3.72661 2.04869 3.72661 1.80005C3.72661 1.55141 3.82539 1.31295 4.0012 1.13714C4.17702 0.
+
+---
+# Astro configuration
 ---
 
-<div class="space-y-24">
-  <header class="px-8 sticky top-0 z-50 bg-white">
-    <nav class="flex justify-between py-6 max-w-6xl mx-auto items-center">
-      <a href="/">
-        <img src="/logo.svg" alt="rhythm nation logo" width="142.42" height="40" loading="lazy" decoding="async" />
-      </a>
-      <div class="space-x-6">
-        <a href="/" class="font-normal font-semibold">
-          Home
-        </a>
-        <a href="/blog" class="font-normal">
-          Blog
-        </a>
-        <a href="/docs/guides/first-guide" class="font-normal">
-          Docs
-        </a>
-        <a href="/contact-us" class="font-normal">
-          Contact
-        </a>
+<template>
+  <!-- Portfolio section -->
+  <section>
+    <div class="px-8">
+      <div class="max-w-6xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-8 gap-x-28 gap-y-10">
+          <div class="md:col-span-3">
+            <h2 class="text-3xl md:text-5xl font-bold leading-snug">OUR PORTFOLIO</h2>
+          </div>
+          <div class="md:col-span-5 overflow-auto flex h-full items-center">
+            <p class="md:text-lg">At Hooman Digital, we offer a range of services to help you achieve your digital goals. Our services include At Hooman Digital, we offer a range of services to help you achieve your digital goals. Our services include.</p>
+          </div>
+          <div class="md:col-span-full col-span-full h-full grid md:grid-cols-3 grid-cols-1 gap-x-8 gap-y-12 w-full">
+          
+            <div class="space-y-5 w-full">
+              <img src="/_astro/project1.0ad93328_ZB4ii7.jpg" alt="hero image" class="object-cover bg-gray-600 md:h-[400px] w-full" width="1000" height="1000" loading="lazy" decoding="async">
+              <div class="space-y-1">
+                <h4 class="text-xl font-medium">HEALTH CARE</h4>
+                <p>Application</p>
+              </div>
+            </div>
+            <div class="space-y-5 w-full">
+              <img src="/_astro/project1.0ad93328_ZB4ii7.jpg" alt="hero image" class="object-cover bg-gray-600 md:h-[400px] w-full" width="1000" height="1000" loading="lazy" decoding="async">
+              <div class="space-y-1">
+                <h4 class="text-xl font-medium">HEALTH CARE</h4>
+                <p>Application</p>
+              </div>
+            </div>
+            <div class="space-y-5 w-full">
+              <img src="/_astro/project1.0ad93328_ZB4ii7.jpg" alt="hero image" class="object-cover bg-gray-600 md:h-[400px] w-full" width="1000" height="1000" loading="lazy" decoding="async">
+              <div class="space-y-1">
+                <h4 class="text-xl font-medium">HEALTH CARE</h4>
+                <p>Application</p>
+              </div>
+            </div>
+            <div class="space-y-5 w-full">
+              <img src="/_astro/project1.0ad93328_ZB4ii7.jpg" alt="hero image" class="object-cover bg-gray-600 md:h-[400px] w-full" width="1000" height="1000" loading="lazy" decoding="async">
+              <div class="space-y-1">
+                <h4 class="text-xl font-medium">HEALTH CARE</h4>
+                <p>Application</p>
+              </div>
+            </div>
+            <div class="space-y-5 w-full">
+              <img src="/_astro/project1.0ad93328_ZB4ii7.jpg" alt="hero image" class="object-cover bg-gray-600 md:h-[400px] w-full" width="1000" height="1000" loading="lazy" decoding="async">
+              <div class="space-y-1">
+                <h4 class="text-xl font-medium">HEALTH CARE</h4>
+                <p>Application</p>
+              </div>
+            </div>
+           
+          </div>
+          <div class="col-span-full flex items-center w-full mt-4 justify-center">
+            <button class="px-6 py-3 bg-[#FAE86E] rounded-full flex items-center space-x-4">
+              <span class="font-medium">View Projects</span>
+              <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.07692 10L8.46154 2.61538V9.23077H10V0H0.769231V1.53846H7.38462L0 8.92308L1.07692 10Z" fill="black"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
       </div>
-    </nav>
-  </header>
-  <main>
-    <Spacer space={40} />
-    {/* hero section */}
-    <section class="-mt-20 md:-mt-0">
+    </div>
+  </section>
+</template>
+---
+# Astro configuration
+---
+
+<template>
+  <div>
+    <!-- Hero section -->
+    <section>
       <div class="px-8">
         <div class="max-w-6xl mx-auto">
-          <div class="flex flex-col md:flex-row md:justify-between md:space-x-24">
-            {
-            
-            }
+          <div class="bg-[#FAE86E] p-10 flex flex-col md:flex-row items-center md:space-x-10">
+            <div class="space-y-6">
+              <h4 class="md:text-5xl text-3xl font-bold">LET’S MAKE THINGS HAPPEN</h4>
+              <p class="text-lg">No matter what your digital needs are, we have the expertise and experience to help you succeed. Explore our services and portfolio to see how we can help you elevate your digital presence. And when you're ready, contact us to schedule a consultation with our team.</p>
+              <button class="px-6 py-3 border border-slate-900 rounded-full flex items-center space-x-4">
+                <span class="font-medium">Let’s Talk to us</span>
+                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.07692 10L8.46154 2.61538V9.23077H10V0H0.769231V1.53846H7.38462L0 8.92308L1.07692 10Z" fill="black"></path>
+                </svg>
+              </button>
+            </div>
+            <img src="/_astro/cta.e0116373_1Vgttc.svg" alt="hero image" class="object-cover h-[280px] w-full mt-10 md:mt-0" width="570" height="280" loading="lazy" decoding="async">
           </div>
         </div>
       </div>
     </section>
-    <Spacer space={14} />
-    <img src="/_astro/hero.0ba4f3a9_2srxXT.png" alt="hero image" class="object-cover bg-gray-600 h-[460px] w-full" width="570" height="600" loading="lazy" decoding="async" />
-    <div class="flex flex-wrap items-center md:justify-start justify-center">
-      {/* ... tag spans ... */}
-    </div>
-    {/* Closing tag for the section removed or corrected here */}
-    <section>
+
+    <!-- Recent blog section -->
+    <section class="bg-[#FFF8F2] py-20">
       <div class="px-8">
-        {/* ... rest of the section code ... */}
+        <div class="max-w-6xl mx-auto">
+          <h2 class="text-5xl font-bold leading-snug">RECENT BLOG</h2>
+          <div class="grid md:grid-cols-2 grid-cols-1 gap-x-10 gap-y-16 mt-10">
+            <!-- Blog post 1 -->
+            <a href="/blog/navigating-the-digital-age-cybersecurity-essentials" class="space-y-6 cursor-pointer">
+              <div class="overflow-hidden">
+                <img src="/_astro/post-banner.7b1637d3_ZuOfen.webp" alt="Navigating the Digital Age: Cybersecurity Essentials" loading="lazy" class="object-cover overflow-hidden bg-gray-600 h-[440px] w-full rounded-lg" width="1200" height="1200" decoding="async">
+              </div>
+              <div class="space-y-6 px-4">
+                <!-- Blog details -->
+                <div class="space-x-2 flex items-center text-sm">
+                  <p class="font-bold">MARKETING</p>
+                  <time datetime="2022-07-28T00:00:00.000Z">Jul 28, 2022</time>
+                </div>
+                <div class="space-y-2">
+                  <h3 class="text-2xl font-bold">Navigating the Digital Age: Cybersecurity Essentials</h3>
+                  <p class="line-clamp-2">The Enchanted Forest is a place of wonder and magic, shrouded in mystery and teeming with fantastical creatures. In this blog post</p>
+                </div>
+                <button class="px-4 py-1.5 border border-slate-900 rounded-full flex items-center space-x-4">
+                  <span class="font-medium">Read more</span>
+                  <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.07692 10L8.46154 2.61538V9.23077H10V0H0.769231V1.53846H7.38462L0 8.92308L1.07692 10Z" fill="black"></path>
+                  </svg>
+                </button>
+              </div>
+            </a>
+
+            <!-- Blog post 2 -->
+            <a href="/blog/mastering-the-culinary-arts-a-chefs-guide-to-flavor" class="space-y-6 cursor-pointer">
+              <div class="overflow-hidden">
+                <img src="/_astro/post-banner.48a838a4_Zgzlg.webp" alt="Mastering the Culinary Arts: A Chef's Guide to Flavor" loading="lazy" class="object-cover overflow-hidden bg-gray-600 h-[440px] w-full rounded-lg" width="1200" height="1200" decoding="async">
+              </div>
+              <div class="space-y-6 px-4">
+                <!-- Blog details -->
+                <div class="space-x-2 flex items-center text-sm">
+                  <p class="font-bold">MARKETING</p>
+                  <time datetime="2022-07-22T00:00:00.000Z">Jul 22, 2022</time>
+                </div>
+                <div class="space-y-2">
+                  <h3 class="text-2xl font-bold">Mastering the Culinary Arts: A Chef's Guide to Flavor</h3>
+                  <p class="line-clamp-2">The Enchanted Forest is a place of wonder and magic, shrouded in mystery and teeming with fantastical creatures. In this blog post</p>
+                </div>
+                <button class="px-4 py-1.5 border border-slate-900 rounded-full flex items-center space-x-4">
+                  <span class="font-medium">Read more</span>
+                  <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.07692 10L8.46154 2.61538V9.23077H10V0H0.769231V1.53846H7.38462L0 8.92308L1.07692 10Z" fill="black"></path>
+                  </svg>
+                </button>
+              </div>
+            </a>
+          </div>
+        </div>
       </div>
     </section>
-  </main>
-</div>
+
+   
+    <footer class="space-y-20">
+      <section>
+        <div class="px-8">
+          <div class="max-w-6xl mx-auto">
+            <div class="flex flex-col md:flex-row justify-between md:space-x-12">
+              
+              <div class="w-full max-w-xs space-y-8">
+                <img
